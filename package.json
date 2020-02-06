@@ -1,24 +1,27 @@
 {
-  "name": "@mattpringle/ember-cap",
-  "version": "0.0.0",
-  "description": "Ember Capacitor",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://MatthewPringle@github.com/MatthewPringle/ember-cap.git"
-  },
-  "keywords": [
-    "Ember",
-    "Capacitor",
-    "Ionic"
-  ],
-  "author": "Matthew Pringle",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MatthewPringle/ember-cap/issues"
-  },
-  "homepage": "https://github.com/MatthewPringle/ember-cap#readme"
+    "name": "@mattpringle/ember-cap",
+    "version": "0.0.0",
+    "description": "Ember Capacitor",
+    "main": "bin/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "ember-cap": "./bin/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://MatthewPringle@github.com/MatthewPringle/ember-cap.git"
+    },
+    "keywords": [
+        "Ember",
+        "Capacitor",
+        "Ionic"
+    ],
+    "author": "Matthew Pringle",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MatthewPringle/ember-cap/issues"
+    },
+    "homepage": "https://github.com/MatthewPringle/ember-cap#readme"
 }
