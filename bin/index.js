@@ -8,10 +8,14 @@ const emberCapAdd   = require( '../lib/add'   );
 const emberCapServe = require( '../lib/serve' );
 const emberCapBuild = require( '../lib/build' );
 
+/* Message */
+/* ---------------------------------------------------------------------------------------------------- */
+console.log( 'Ember Capacitor' );
+
 /* Commands */
 /* ---------------------------------------------------------------------------------------------------- */
 if ( !process.argv[ 2 ] ) {
-    console.log( 'Command Not Found!' );
+    console.log( 'Error: No arguments provided' );
     
 /* Commands - Init */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -35,7 +39,7 @@ if ( !process.argv[ 2 ] ) {
     /* Error */
     /* ------------------------------------------------------------------------------------------------ */
     } else {
-        console.log( 'No Platform Selected' );
+        console.log( 'Error: No Platform Selected' );
     }
     
 /* Commands - Serve */
@@ -55,7 +59,7 @@ if ( !process.argv[ 2 ] ) {
     /* Error */
     /* ------------------------------------------------------------------------------------------------ */
     } else {
-        console.log( 'No Platform Selected' );
+        console.log( 'Error: No Platform Selected' );
     }
     
 /* Commands - Build */
@@ -75,11 +79,11 @@ if ( !process.argv[ 2 ] ) {
     /* Error */
     /* ------------------------------------------------------------------------------------------------ */
     } else {
-        console.log( 'No Platform Selected' );
+        console.log( 'Error: No Platform Selected' );
     }
     
 /* Commands - Error */
 /* ---------------------------------------------------------------------------------------------------- */
 } else {
-    console.log( 'Command Not Found!' );
+    console.log( 'Error: Command not found' );
 }
