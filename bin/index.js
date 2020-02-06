@@ -1,38 +1,22 @@
 #!/usr/bin/env node
+'use strict';
 
 /* Ember Capacitor */
 /* ---------------------------------------------------------------------------------------------------- */
-
-//corber init
-//corber start
-//corber build --platform=ios --environment=production
-//corber build --platform=ios --environment=production --release
-
-//cordova platform add <platform name>
-//cordova create <path>
-//cordova run <platform name>
-
-//https://forum.ionicframework.com/t/ember-integration/177429
-//ember-capacitor-init.sh
-//ember-capacitor-add-ios.sh
-//ember-capacitor-add-android.sh
-//ember-capacitor-serve-ios.sh
-//ember-capacitor-serve-android.sh
-//ember-capacitor-build-ios.sh
-//ember-capacitor-build-android.sh
-
+const emberCapInit  = require( '../lib/init'  );
+const emberCapAdd   = require( '../lib/add'   );
+const emberCapServe = require( '../lib/serve' );
+const emberCapBuild = require( '../lib/build' );
 
 /* Commands */
 /* ---------------------------------------------------------------------------------------------------- */
 if ( !process.argv[ 2 ] ) {
-    
-    console.log( 'No Command' );
+    console.log( 'Command Not Found!' );
     
 /* Commands - Init */
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'init' ) {
-    
-    console.log( 'INIT' );
+    emberCapInit.run();
     
 /* Commands - Platform */
 /* ---------------------------------------------------------------------------------------------------- */
@@ -40,22 +24,62 @@ if ( !process.argv[ 2 ] ) {
     
     /* Add - iOS */
     /* ------------------------------------------------------------------------------------------------ */
-    if ( process.argv[ 3 ] === 'add' && process.argv[ 4 ] === 'ios' ) {
-        
-        console.log( 'Adding Platform iOS' );
+    if ( process.argv[ 3 ] === 'add' && process.argv[ 4 ] === 'ios' ) {        
+        emberCapAdd.ios();
         
     /* Add - Android */
     /* ------------------------------------------------------------------------------------------------ */
     } else if ( process.argv[ 3 ] === 'add' && process.argv[ 4 ] === 'android' ) {
-        
-        console.log( 'Adding Platform Android' );
+        emberCapAdd.android();
         
     /* Error */
     /* ------------------------------------------------------------------------------------------------ */
     } else {
-        
         console.log( 'No Platform Selected' );
-        
     }
-
+    
+/* Commands - Serve */
+/* ---------------------------------------------------------------------------------------------------- */
+} else if ( process.argv[ 2 ] === 'serve' ) {
+    
+    /* Serve - iOS */
+    /* ------------------------------------------------------------------------------------------------ */
+    if ( process.argv[ 3 ] === 'ios' ) {
+        emberCapServe.ios();
+        
+    /* Serve - Android */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else if ( process.argv[ 3 ] === 'android' ) {
+        emberCapServe.android();
+        
+    /* Error */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else {
+        console.log( 'No Platform Selected' );
+    }
+    
+/* Commands - Build */
+/* ---------------------------------------------------------------------------------------------------- */
+} else if ( process.argv[ 2 ] === 'build' ) {
+    
+    /* Build - iOS */
+    /* ------------------------------------------------------------------------------------------------ */
+    if ( process.argv[ 3 ] === 'ios' ) {
+        emberCapBuild.ios();
+        
+    /* Build - Android */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else if ( process.argv[ 3 ] === 'android' ) {
+        emberCapBuild.android();
+        
+    /* Error */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else {
+        console.log( 'No Platform Selected' );
+    }
+    
+/* Commands - Error */
+/* ---------------------------------------------------------------------------------------------------- */
+} else {
+    console.log( 'Command Not Found!' );
 }
