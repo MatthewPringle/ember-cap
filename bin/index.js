@@ -3,6 +3,7 @@
 
 /* Ember Capacitor */
 /* ---------------------------------------------------------------------------------------------------- */
+const emberCapNew   = require( '../lib/new'   );
 const emberCapInit  = require( '../lib/init'  );
 const emberCapAdd   = require( '../lib/add'   );
 const emberCapServe = require( '../lib/serve' );
@@ -17,11 +18,16 @@ console.log( '\r\n\Ember Capacitor' );
 if ( !process.argv[ 2 ] ) {
     console.log( 'Error: No arguments provided' );
     
+/* Commands - New */
+/* ---------------------------------------------------------------------------------------------------- */
+} else if ( process.argv[ 2 ] === 'new' ) {    
+    emberCapNew.run( process.argv[ 3 ] , process.argv[ 4 ] );
+    
 /* Commands - Init */
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'init' ) {
     emberCapInit.run();
-    
+
 /* Commands - Platform */
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'platform' ) {
