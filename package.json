@@ -23,5 +23,8 @@
     "bugs": {
         "url": "https://github.com/MatthewPringle/ember-cap/issues"
     },
-    "homepage": "https://github.com/MatthewPringle/ember-cap#readme"
+    "homepage": "https://github.com/MatthewPringle/ember-cap#readme",
+    "devDependencies": {
+        "ip": "^1.1.5"
+    }
 }
