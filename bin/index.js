@@ -20,14 +20,34 @@ if ( !process.argv[ 2 ] ) {
     
 /* Commands - New */
 /* ---------------------------------------------------------------------------------------------------- */
-} else if ( process.argv[ 2 ] === 'new' ) {    
-    emberCapNew.run( process.argv[ 3 ] , process.argv[ 4 ] );
+} else if ( process.argv[ 2 ] === 'new' ) {
+    
+    /* Check */
+    /* ------------------------------------------------------------------------------------------------ */
+    if ( process.argv[ 3 ] !== undefined && process.argv[ 4 ] !== undefined ) {
+        emberCapNew.run( process.argv[ 3 ] , process.argv[ 4 ] );
+        
+    /* Error */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else {
+        console.log( 'Error: No App Name / App Package ID' );
+    }
     
 /* Commands - Init */
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'init' ) {
-    emberCapInit.run();
-
+    
+    /* Check */
+    /* ------------------------------------------------------------------------------------------------ */
+    if ( process.argv[ 3 ] !== undefined && process.argv[ 4 ] !== undefined ) {
+        emberCapInit.run( process.argv[ 3 ] , process.argv[ 4 ] );
+        
+    /* Error */
+    /* ------------------------------------------------------------------------------------------------ */
+    } else {
+        console.log( 'Error: No App Name / App Package ID' );
+    }
+    
 /* Commands - Platform */
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'platform' ) {
