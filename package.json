@@ -1,6 +1,6 @@
 {
-    "name": "@mattpringle/ember-cap",
-    "version": "0.0.0",
+    "name": "ember-cap",
+    "version": "0.0.2",
     "description": "Ember Capacitor",
     "main": "bin/index.js",
     "scripts": {
@@ -24,7 +24,7 @@
         "url": "https://github.com/MatthewPringle/ember-cap/issues"
     },
     "homepage": "https://github.com/MatthewPringle/ember-cap#readme",
-    "devDependencies": {
+    "dependencies": {
         "ip": "^1.1.5"
     }
 }
