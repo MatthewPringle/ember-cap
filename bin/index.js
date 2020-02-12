@@ -9,11 +9,6 @@ const emberCapAdd   = require( '../lib/add'   );
 const emberCapServe = require( '../lib/serve' );
 const emberCapBuild = require( '../lib/build' );
 
-const utils = require( '../lib/utils' );
-
-
-const fs            = require( 'fs' );
-
 /* Message */
 /* ---------------------------------------------------------------------------------------------------- */
 console.log( '\r\n\Ember Capacitor' );
@@ -27,12 +22,10 @@ if ( !process.argv[ 2 ] ) {
 /* ---------------------------------------------------------------------------------------------------- */
 } else if ( process.argv[ 2 ] === 'new' ) {
     
-    utils.test();
-    
     /* Check */
     /* ------------------------------------------------------------------------------------------------ */
     if ( process.argv[ 3 ] !== undefined && process.argv[ 4 ] !== undefined ) {
-        //emberCapNew.run( process.argv[ 3 ] , process.argv[ 4 ] );
+        emberCapNew.run( process.argv[ 3 ] , process.argv[ 4 ] );
         
     /* Error */
     /* ------------------------------------------------------------------------------------------------ */
