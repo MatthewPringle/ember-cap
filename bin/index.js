@@ -3,5 +3,12 @@
 
 /* Ember Capacitor */
 /* ---------------------------------------------------------------------------------------------------- */
-const emberCapacitor = require( '../libs/ember-capacitor' );
-//emberCapacitor.run( process.argv );
+const emberCapacitor = require( '../lib/ember-capacitor' );
+
+/* Message */
+/* ---------------------------------------------------------------------------------------------------- */
+console.log( '\r\n\Ember Capacitor' );
+
+/* Run */
+/* ---------------------------------------------------------------------------------------------------- */
+emberCapacitor.run( process.argv );
