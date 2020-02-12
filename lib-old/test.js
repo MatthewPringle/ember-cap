@@ -13,13 +13,3 @@ module.exports = {
     }
 
 };
-
-//module.exports = {
-
-//...require('./test'),
-
-
-//const utils = require( '../lib/utils' );
-//utils.test();
-
-//const fs            = require( 'fs' );
