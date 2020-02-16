@@ -6,6 +6,7 @@ Ember Capacitor
 Converting work done to npm module https://forum.ionicframework.com/t/ember-integration/177429
 
 ## Commands
+ember-cap new <example-app> <com.example.app>
 ember-cap init  
 ember-cap platform add ios  
 ember-cap platform add android  
