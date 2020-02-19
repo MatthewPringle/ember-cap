@@ -7,7 +7,7 @@ Converting work done to npm module https://forum.ionicframework.com/t/ember-inte
 
 ## Commands
 
-### Create A New Ember Application & Add Capacitor
+### Create a new Ember application & initialise Capacitor
 ```
 ember-cap new <example-app> <com.example.app>
 ```
@@ -19,17 +19,25 @@ npm install --save @capacitor/core @capacitor/cli
 npx cap init --web-dir dist <example-app> <com.example.app>
 ```
 
+### Or initialise Capacitor in an existing Ember application
+```
+ember-cap init <example-app> <com.example.app>
+```
 
+### Add the platform/s you require
+```
+ember-cap platform add ios
+ember-cap platform add android
+```
 
+### Serve the Ember application to a simulator / device on a local network. You will need to run the app using Xcode / Android Studio
+```
+ember-cap serve ios
+ember-cap serve android
+```
 
-
-ember-cap new <example-app> <com.example.app>
-ember-cap init  
-ember-cap platform add ios  
-ember-cap platform add android  
-ember-cap serve ios  
-ember-cap serve android  
-ember-cap build ios  
+### Build the Ember application and add to the platform ready for build and deployment using Xcode / Android Studio
+```
+ember-cap build ios
 ember-cap build android
-
-
+```
