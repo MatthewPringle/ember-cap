@@ -20,3 +20,14 @@ ember-capacitor-build-android.sh
 
 ember-cap platform add ios
 ember-cap platform add android
+
+
+
+
+ember-cap new example-app com.test.matt
+
+ember-cap platform add ios
+ember-cap serve ios
+
+ember-cap platform add android
+ember-cap serve android
