@@ -7,6 +7,11 @@ Converting work done to npm module https://forum.ionicframework.com/t/ember-inte
 
 ## Commands
 
+### Install
+```
+npm install -g ember-cap
+```
+
 ### Create a new Ember application & initialise Capacitor
 ```
 ember-cap new <example-app> <com.example.app>
