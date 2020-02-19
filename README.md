@@ -1,7 +1,7 @@
 # ember-cap
 Ember Capacitor
 
-## This library does not yet work and is in development
+## This library is in development
 
 Converting work done to npm module https://forum.ionicframework.com/t/ember-integration/177429
 
