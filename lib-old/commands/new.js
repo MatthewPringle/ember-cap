@@ -29,19 +29,19 @@ module.exports = {
             //}
             
             /* Check Ember Installed */
-            if ( !ember.installed() ) {
-                throw 'Ember not installed\nTo install Ember use npm install -g ember-cli';
-            }
+            //if ( !ember.installed() ) {
+            //    throw 'Ember not installed\nTo install Ember use npm install -g ember-cli';
+            //}
             
             /* New Ember App */
-            if ( !ember.newApp( args[ 3 ] ) ) {
-                throw 'Could not create new Ember app';
-            }
+            //if ( !ember.newApp( args[ 3 ] ) ) {
+            //    throw 'Could not create new Ember app';
+            //}
             
             /* App Directory */
-            if ( !utils.directory( args[ 3 ] ) ) {
-                throw 'Could not change directory to new Ember app';
-            }
+            //if ( !utils.directory( args[ 3 ] ) ) {
+            //    throw 'Could not change directory to new Ember app';
+            //}
             
             /* Init Capacitor */
             process.stdout.write( '\r\nEmber Capacitor' );
