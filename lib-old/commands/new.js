@@ -16,17 +16,17 @@ module.exports = {
         try {
             
             /* Message */
-            process.stdout.write( ' - New\r\n' );
+            //process.stdout.write( ' - New\r\n' );
             
             /* Check App Name */
-            if ( args[ 3 ] === undefined || !utils.appName( args[ 3 ] ) ) {
-                throw 'Please enter a valid App Name (example-app)';
-            }
+            //if ( args[ 3 ] === undefined || !utils.appName( args[ 3 ] ) ) {
+            //    throw 'Please enter a valid App Name (example-app)';
+            //}
             
             /* Check App ID */
-            if ( args[ 4 ] === undefined || !utils.appID( args[ 4 ] ) ) {
-                throw 'Please enter an App Package ID (in Java package format, no dashes) (com.example.app)';
-            }
+            //if ( args[ 4 ] === undefined || !utils.appID( args[ 4 ] ) ) {
+            //    throw 'Please enter an App Package ID (in Java package format, no dashes) (com.example.app)';
+            //}
             
             /* Check Ember Installed */
             if ( !ember.installed() ) {
