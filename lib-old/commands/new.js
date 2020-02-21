@@ -44,8 +44,8 @@ module.exports = {
             //}
             
             /* Init Capacitor */
-            process.stdout.write( '\r\nEmber Capacitor' );
-            init.run( args );
+            //process.stdout.write( '\r\nEmber Capacitor' );
+            //init.run( args );
             
         /* Error */
         /* -------------------------------------------------------------------------------------------- */
