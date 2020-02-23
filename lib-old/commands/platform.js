@@ -12,10 +12,10 @@ module.exports = {
     
     /* Platforms */
     /* ------------------------------------------------------------------------------------------------ */    
-    platforms: [
-        { 'platform': 'ios'     , 'path': './ios'     , 'title': 'iOS'     },
-        { 'platform': 'android' , 'path': './android' , 'title': 'Android' }
-    ],
+    //platforms: [
+    //    { 'platform': 'ios'     , 'path': './ios'     , 'title': 'iOS'     },
+    //    { 'platform': 'android' , 'path': './android' , 'title': 'Android' }
+    //],
     
     /* Run */
     /* ------------------------------------------------------------------------------------------------ */
@@ -23,15 +23,15 @@ module.exports = {
         try {
             
             /* Message */
-            process.stdout.write( ' - Platform\r\n' );
+            //process.stdout.write( ' - Platform\r\n' );
             
             /* Command */            
-            let platform = this.platforms.find( item => { return item.platform === args[ 4 ] });
+            //let platform = this.platforms.find( item => { return item.platform === args[ 4 ] });
             
             /* Check Command */
-            if ( !platform ) {
-                throw 'No Platform Selected';
-            }
+            //if ( !platform ) {
+            //    throw 'No Platform Selected';
+            //}
             
             /* Check Platform Exists */
             if ( utils.folderExists( platform.path ) ) {
@@ -39,26 +39,26 @@ module.exports = {
             }
             
             /* Check File Exists */
-            if ( !utils.fileExists( './package.json' ) ) {
-                throw 'Unable to find package.json.';
-            }
+            //if ( !utils.fileExists( './package.json' ) ) {
+            //    throw 'Unable to find package.json.';
+            //}
             
             /* Check Capacitor Added */
-            if ( !capacitor.added() ) {
-                throw 'Capacitor must be installed before running ember-cap platform add';
-            }
+            //if ( !capacitor.added() ) {
+            //    throw 'Capacitor must be installed before running ember-cap platform add';
+            //}
             
             /* Check Capacitor Initiated */
-            if ( !capacitor.initiated() ) {
-                throw 'Capacitor must be initiated before running ember-cap platform add';
-            }
+            //if ( !capacitor.initiated() ) {
+            //    throw 'Capacitor must be initiated before running ember-cap platform add';
+            //}
             
             /* Check Dist */
             if ( !capacitor.dist() ) {
                 throw 'Cannot find dist/';
             }
             
-            /* Add Platform*/
+            /* Add Platform */
             if ( !capacitor.add( platform ) ) {
                 throw 'Cannot add ' + platform.title + ' platform';
             }
