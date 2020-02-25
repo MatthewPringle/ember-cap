@@ -54,14 +54,14 @@ module.exports = {
             //}
             
             /* Check Dist */
-            if ( !capacitor.dist() ) {
-                throw 'Cannot find dist/';
-            }
+            //if ( !capacitor.dist() ) {
+            //    throw 'Cannot find dist/';
+            //}
             
             /* Add Platform */
-            if ( !capacitor.add( platform ) ) {
-                throw 'Cannot add ' + platform.title + ' platform';
-            }
+            //if ( !capacitor.add( platform ) ) {
+            //    throw 'Cannot add ' + platform.title + ' platform';
+            //}
             
             /* Android Manifest */
             if ( platform.platform === 'android' ) {
