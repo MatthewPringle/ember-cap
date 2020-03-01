@@ -64,11 +64,11 @@ module.exports = {
             //}
             
             /* Android Manifest */
-            if ( platform.platform === 'android' ) {
-                if ( !android.updateManifest() ) {
-                    throw 'Unable to find AndroidManifest.xml';
-                }
-            }
+            //if ( platform.platform === 'android' ) {
+            //    if ( !android.updateManifest() ) {
+            //        throw 'Unable to find AndroidManifest.xml';
+            //    }
+            //}
             
         /* Error */
         /* -------------------------------------------------------------------------------------------- */

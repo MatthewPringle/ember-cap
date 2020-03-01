@@ -23,15 +23,15 @@ module.exports = {
         try {
             
             /* Message */
-            process.stdout.write( ' - Build\r\n' );
+            //process.stdout.write( ' - Build\r\n' );
             
             /* Command */            
-            let platform = this.platforms.find( item => { return item.platform === args[ 3 ] });
+            //let platform = this.platforms.find( item => { return item.platform === args[ 3 ] });
             
             /* Check Command */
-            if ( !platform ) {
-                throw 'No Platform Selected';
-            }
+            //if ( !platform ) {
+            //    throw 'No Platform Selected';
+            //}
             
             /* Check Platform Exists */
             if ( !utils.folderExists( platform.path ) ) {
@@ -44,14 +44,14 @@ module.exports = {
             }
             
             /* Check Capacitor Added */
-            if ( !capacitor.added() ) {
-                throw 'Capacitor must be installed before running ember-cap platform add';
-            }
+            //if ( !capacitor.added() ) {
+            //    throw 'Capacitor must be installed before running ember-cap platform add';
+            //}
             
             /* Check Capacitor Initiated */
-            if ( !capacitor.initiated() ) {
-                throw 'Capacitor must be initiated before running ember-cap platform add';
-            }
+            //if ( !capacitor.initiated() ) {
+            //    throw 'Capacitor must be initiated before running ember-cap platform add';
+            //}
             
             /* Capacitor Build */
             if ( !capacitor.build() ) {
