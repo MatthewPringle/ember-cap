@@ -54,12 +54,12 @@ module.exports = {
             //}
             
             /* Capacitor Build */
-            if ( !capacitor.build() ) {
-                throw 'Cannot update capacitor.config.json';
+            //if ( !capacitor.build() ) {
+            //    throw 'Cannot update capacitor.config.json';
             }
             
             /* Message */
-            console.log( 'Building ' + platform.title );
+            //console.log( 'Building ' + platform.title );
             
             /* Build */
             if ( !ember.build() ) {

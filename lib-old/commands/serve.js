@@ -54,9 +54,9 @@ module.exports = {
             //}
             
             /* Capacitor Serve */
-            if ( !capacitor.serve() ) {
-                throw 'Cannot update capacitor.config.json';
-            }
+            //if ( !capacitor.serve() ) {
+            //    throw 'Cannot update capacitor.config.json';
+            //}
             
             /* Sync Platform */
             if ( !capacitor.sync( platform ) ) {
