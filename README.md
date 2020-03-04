@@ -1,10 +1,6 @@
 # ember-cap
 Ember Capacitor
 
-## This library is in development
-
-Converting work done to npm module https://forum.ionicframework.com/t/ember-integration/177429
-
 ## Commands
 
 ### Install
