@@ -27,8 +27,8 @@ ember-cap init <example-app> <com.example.app>
 
 ### Add the platform/s you require
 ```
-ember-cap platform add ios
-ember-cap platform add android
+ember-cap add ios
+ember-cap add android
 ```
 
 ### Serve the Ember application to a simulator / device on a local network. You will need to run the app using Xcode / Android Studio
