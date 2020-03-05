@@ -15,7 +15,7 @@ ember-cap new <example-app> <com.example.app>
 This will create a new Ember application and then initialise Capacitor. This is equivalent to running the following commands.
 ```
 ember new <example-app>
-cd example-app
+cd <example-app>
 npm install --save @capacitor/core @capacitor/cli
 npx cap init --web-dir dist <example-app> <com.example.app>
 ```
