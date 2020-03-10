@@ -46,7 +46,7 @@ ember-cap build android
 ### environment.js / target.js
 You can access the following environment variables in your Ember environment.js & target.js
 ```
-process.env.CAPACITOR = true / false  
+process.env.CAPACITOR = true / undefined  
 ```
 ```
 process.env.PLATFORM = ios / android  
