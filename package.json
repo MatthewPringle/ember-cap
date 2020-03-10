@@ -1,6 +1,6 @@
 {
     "name": "ember-cap",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Ember Capacitor",
     "main": "bin/index.js",
     "scripts": {
