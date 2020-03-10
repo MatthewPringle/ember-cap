@@ -42,3 +42,28 @@ ember-cap serve android
 ember-cap build ios
 ember-cap build android
 ```
+
+### environment.js / target.js
+You can access the following environment variables in your Ember environment.js & target.js
+process.env.CAPACITOR true / false
+process.env.PLATFORM ios / android
+```
+environment.js
+
+module.exports = function( environment ) {
+    let ENV = {
+        modulePrefix: 'example-app',
+        environment,
+        rootURL: '/',
+        locationType: 'auto',
+    }
+    if ( process.env.CAPACITOR ) {   
+        if ( process.env.PLATFORM === 'ios' ) {
+        }
+        if ( process.env.PLATFORM === 'android' ) {
+        }
+    }
+    return ENV;
+};
+
+```
