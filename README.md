@@ -43,7 +43,7 @@ ember-cap build ios
 ember-cap build android
 ```
 
-### environment.js / target.js
+### Environment Variables
 You can access the following environment variables in your Ember environment.js & target.js
 ```
 process.env.CAPACITOR = true / undefined  
